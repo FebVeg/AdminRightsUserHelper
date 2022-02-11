@@ -12,6 +12,7 @@ Ti capiterà di chiamare, o esser chiamato da un utente che ha bisogno di instal
 
 So che la prima cosa che gli chiederai sarà:
 > "E' stato aperto un ticket, approvato dal tuo capo e dalla security?" 
+
 E ti toccherai i maroni per speranza che ti risponda "No", così da continuare a far finta di lavorare scansafatiche bastardo. 
 
 Ecco, sta volta ti ha risposto "Si" menasfighe. 
