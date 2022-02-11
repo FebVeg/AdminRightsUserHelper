@@ -1,10 +1,11 @@
 # Admin Rights User Helper
 Questo scrippettino PowerShell permette di avviare eseguibili con permessi di amministratore durante il supporto tecnico remoto attraverso Teams o altri programmi che non consentono di interfacciarsi con l'UAC di Windows durante la condivisione dello schermo.
 
-Non puoi capire quanto mi ha aiutato questo script! Ricordo ancora i silenzi imbarazzanti dopo aver detto all'utente: 
+Non puoi capire quanto mi abbia aiutato questo script!
+Ricordo ancora i silenzi imbarazzanti dopo aver detto all'utente:
 > "Hey... tu che stai tra la sedia e il monitor... ho pessime notizie per te, non posso aiutarti perché l'altro programma di controllo remoto non funge".
 
-Ricorda sempre di non dare la colpa ai sistemi informatici, ma ad altre persone. 
+Ricorda sempre di non dare la colpa ai sistemi informatici, ma ad altre persone. (?!?!)
 
 ## Guida
 Se anche tu come me hai bisogno di dormire e di urlare allo stesso tempo, leggi questa guida, ti calmerà durante la sessione di troubleshooting remota.
