@@ -7,20 +7,20 @@ Non puoi capire quanto mi ha aiutato questo script! Ricordo ancora i silenzi imb
 Ricorda sempre di non dare la colpa ai sistemi informatici, ma ad altre persone. 
 
 ## Guida
-Se anche tu come me hai bisogno di dormire e di urlare allo stesso tempo, leggi questa guida. Ti calmerà durante la sessione di troubleshooting remota. 
-Ti capiterà di chiamare, o esser chiamato da un utente che ha bisogno di installare qualche programma per un progetto mai sentito di cui ti importa poco (sii sincero). 
+Se anche tu come me hai bisogno di dormire e di urlare allo stesso tempo, leggi questa guida, ti calmerà durante la sessione di troubleshooting remota.
 
-So che la prima cosa che gli chiederai sarà:
+Ti capiterà di chiamare, o esser chiamato da un utente che ha bisogno di installare qualche programma per un progetto mai sentito di cui ti importa poco (sii sincero) e so che la prima cosa che gli chiederai sarà:
 > "E' stato aperto un ticket, approvato dal tuo capo e dalla security?" 
 
-E ti toccherai i maroni per speranza che ti risponda "No", così da continuare a far finta di lavorare scansafatiche bastardo. 
+E ti toccherai i maroni per speranza che ti risponda "No" così da continuare a far finta di lavorare scansafatiche bastardo. 
 
-Ecco, sta volta ti ha risposto "Si" menasfighe. 
+Ecco, sta volta ti ha risposto "Si", menasfighe.
+
 Quindi gli chiederai l'hostname della sua macchina per collegarti al suo computer usando il programmino che ti permetterà di avviare l'installer come admin ma... non funziona. 
-E nemmeno via condivisione schermo di Teams potrai farlo perché non ti permetterà di interagire con l'UAC di Windows.
+E nemmeno dalla condivisione schermo di Teams potrai farlo, perché non ti permetterà di interagire con l'UAC di Windows.
 
 Ma ho trovato la soluzione al problema (non ai miei mentali lol), fatti condividere lo schermo via Teams e copiagli ARUH.ps1 in locale.
-1. Apri un CMD e recati nella cartella dove hai copiato il ARUH.
+1. Apri un CMD e recati nella cartella dove hai copiato ARUH.ps1.
 2. Avvialo con il comando: 
 ```
 powershell.exe -ExecutionPolicy Bypass -File ARUH.ps1
