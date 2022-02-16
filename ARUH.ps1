@@ -120,7 +120,7 @@ try {
         return $false
     }
 
-    $credenziali = Get-Credential -UserName "<DOMAIN>\<Admin Username>" -Message "Per avviare il processo di esecuzione con diritti amministrativi, è necessario inserire le corrette credenziali privilegiate."
+    $credenziali = Get-Credential -UserName "<DOMAIN>\<Admin Username>" -Message "Per avviare il processo di esecuzione con diritti amministrativi è necessario inserire le corrette credenziali privilegiate."
     Start-Process Powershell.exe -Credential $credenziali -ArgumentList "-noprofile -command &{Start-Process Powershell -ArgumentList C:\Windows\Temp\$sn -verb runas}"
 } 
 Catch {
