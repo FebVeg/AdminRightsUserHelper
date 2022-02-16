@@ -120,8 +120,7 @@ try {
         return $false
     }
 
-    $utenza_adm_supporter = Read-Host -Prompt "[?] Utenza amministrativa"
-    $credenziali = Get-Credential -UserName "$env:USERDOMAIN\$utenza_adm_supporter" -Message "Inserire le credenziali amministrative complete di DOMINIO e UTENZA ADMIN."
+    $credenziali = Get-Credential -UserName "<DOMAIN>\<Admin Username>" -Message "Per avviare il processo di esecuzione con diritti amministrativi, è necessario inserire le corrette credenziali privilegiate."
     Start-Process Powershell.exe -Credential $credenziali -ArgumentList "-noprofile -command &{Start-Process Powershell -ArgumentList C:\Windows\Temp\$sn -verb runas}"
 } 
 Catch {
