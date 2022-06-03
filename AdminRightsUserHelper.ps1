@@ -1,5 +1,5 @@
 
-# This script helped me during the downtime of programs that I used to install programs to users remotely when I work.
+# This code helped me to install programs on computers without being able to use my administrative credentials. For example when a user shared his desktop to me from MS Teams.
 
 $executable = Read-Host "Enter the path of the file you want to Run as administrator"
 if (Test-Path -Path $executable) {
