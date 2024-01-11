@@ -26,12 +26,9 @@ if (($f.Length -eq 0) -or ($u.Length -eq 0)) {
 
 Set-Location $env:USERPROFILE
 
-if (Test-Path -Path $f) 
-{   
-    $batch_name = 'support_hd.bat'
-    $batch_code = '@echo off && start "" "{0}" && timeout 2' -f $f
+if (Test-Path -Path $f) {   
+    $batch_name = 'support_hd.bat'; $batch_code = '@echo off && start "" "{0}" && timeout 2' -f $f
     $credentials = Get-Credential -UserName ($env:USERDOMAIN + "\" + $u) -Message "Enter your administrative credentials"
-    try { New-Item -Path "C:\Windows\Temp" -Name $batch_name -Value $batch_code -Force | Out-Null} catch { Write-Host $Error[0] }
+    try { New-Item -Path "C:\Windows\Temp" -Name $batch_name -Value $batch_code -Force | Out-Null } catch { Write-Host $Error[0] }
     Start-Process Powershell.exe -Credential $credentials -ArgumentList "-NoProfile -Command &{Start-Process Powershell -ArgumentList C:\Windows\Temp\$batch_name -Verb RunAs}"
-} 
-else { Write-Host "Il percorso non esiste" }
+} else { Write-Host "Il percorso non esiste" }
